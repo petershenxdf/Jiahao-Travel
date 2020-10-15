@@ -1,1 +1,20 @@
-<p>travel-info works!</p>
+
+
+
+<h2>Travel Info</h2>
+
+<form>
+  <label for="Origination">Origination:</label><br>
+  <input type="text" id="origination" [(ngModel)]="origination" name="origination"><br>
+  <label for="Destination">Destination:</label><br>
+  <input type="text" id="destination" [(ngModel)]="destination" name="destination"><br>
+  <label for="date">Date:</label><br>
+  <input type="Date" id="date" [(ngModel)]="date" name="date"><br>
+  <label for="quant">Number of Travelers:</label><br>
+  <input (click)="recalc()" id="quant" type="number" [(ngModel)]="quant" name="quant"><br>
+</form>
+
+<p>The original Airport is  {{origination}}</p>
+<p>The destination Airport is  {{destination}}</p>
+<p>The travel date is {{date}}</p>
+<p>The total price is {{price}}</p>
