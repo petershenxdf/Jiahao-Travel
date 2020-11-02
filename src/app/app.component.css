@@ -1,0 +1,10 @@
+#navigationBarList li{
+  float: left;
+  list-style: none;
+  background-color: black
+}
+#navigationBarList a{
+  margin-right: 10px;
+  color: red;
+  padding: 20px;
+}
